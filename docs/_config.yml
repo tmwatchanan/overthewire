@@ -1,3 +1,4 @@
+title: Overthewire | Watchanan Chantapakul
 baseurl: /overthewire
-permalink: /:title
+url: "https://tmwatchanan.github.io" 
 theme: jekyll-theme-hacker
