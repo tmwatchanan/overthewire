@@ -6,7 +6,7 @@
 {% for category in site.categories %}
   <li><a name="{{ category | first }}">{{ category | first }}</a>
     <ul>
-    {% for post in category.last %}
+    {% for post in category.last reversed %}
       <li><a href="{{ post.url | prepend:site.baseurl }}">{{ post.title }}</a></li>
     {% endfor %}
     </ul>
