@@ -13,7 +13,7 @@ tag: Bandit
 `ls`, `cat`, `file`
 
 ## วิธีการ
-1. หากเชื่อมต่อ SSH จาก Bandit Level 1 อยู่ ให้ออกจากการเชื่อมต่อโดยกด `Ctrl + c`
+1. หากเชื่อมต่อ SSH จาก Bandit Level 0 อยู่ ให้ออกจากการเชื่อมต่อโดยกด `Ctrl + c`
 2. เชื่อมต่อ SSH เข้าด่านใหม่
     ```
     ssh bandit1@bandit.labs.overthewire.org -p 2220
