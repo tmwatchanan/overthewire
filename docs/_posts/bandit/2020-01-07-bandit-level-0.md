@@ -6,7 +6,7 @@ category: Bandit
 tag: Bandit
 ---
 
-## โจทย์
+## [โจทย์](https://overthewire.org/wargames/bandit/bandit0.html)
 เริ่มเล่นเกม (wargame) โดยการใช้งานเครื่องมือที่เรียกว่า `SSH` (secure shell) โดย [SSH](https://en.wikipedia.org/wiki/SSH_(Secure_Shell)) จะเป็น [protocol](https://en.wikipedia.org/wiki/Communication_protocol) ที่ถูกกำหนดขึ้นมาเพื่อสร้างการเชื่อมต่อ (connection) ระหว่างไคลเอนต์ (client) และ เซิร์ฟเวอร์ (server) ซึ่งโดยปกติ SSH จะใช้หลักการของ [public-key cryptography](https://en.wikipedia.org/wiki/Public-key_cryptography) หรือการเข้ารหัสลับแบบกุญแจสาธารณะ สำหรับในเกม Overthewire นี้ เค้าจะเปิดให้บริการ SSH server ไว้ และเครื่องของเราจะทำหน้าที่เป็น SSH client เพื่อไปเชื่อมต่อเข้ากับเซิร์ฟเวอร์ของเค้า หลักการก็คือจะใช้การสร้างคู่ของกุญแจ public และ private แบบอัตโนมัติทุกตอนที่มีการเชื่อมต่อเพื่อใช้ในการเข้ารหัส และหลังจากนั้นจะให้กรอกรหัสผ่านที่ถูกกำหนดไว้ (pre-defined)
 
 > ซึ่งจริง ๆ แล้วเราสร้างการเชื่อมต่อของ SSH นั้นจะสามารถทำได้อีกวิธีคือ การที่เรากำหนดคู่ของกุญแจ public และ private ไว้เอง อธิบายง่าย ๆ ก็คือ ทาง SSH server จะขอ public key จาก SSH client ไปเก็บไว้ เพื่อทำการเก็บเช็ค (เสมือนกับว่าเป็นบัตรประจำตัว) หากพบว่ามี public key ตรงเวลาสร้างการเชื่อมต่อเข้ามา ก็จะสามารถเข้าใช้งานได้ โดยไม่จำเป็นต้องกรอกรหัสผ่านนั่นเอง
